@@ -1,0 +1,95 @@
+/* ////////////////
+/////GENERAL STYLES/////
+//////////////// */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georama", sans-serif;
+  color: #d4eaff;
+  cursor: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #2f3032;
+}
+
+.cta-btn:link,
+.cta-btn:visited {
+  border: 2px solid #5a95cc;
+  border-radius: 3px;
+  color: #70baff;
+}
+
+.cta-btn:hover,
+.cta-btn:active {
+  background-color: rgba(112, 186, 255, 0.151);
+}
+
+#main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.section-icon {
+  height: 3.2rem;
+  width: 3.2rem;
+  color: #5a95cc;
+}
+
+.section-heading {
+  display: flex;
+  gap: 2.4rem;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 4.8rem;
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* ////////////////
+/////CUSTOM CURSOR/////
+//////////////// */
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  pointer-events: none;
+}
+
+.outer {
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid #d4eaff;
+  transition: all 0.08s ease-out;
+}
+
+.inner {
+  width: 7px;
+  height: 7px;
+  background: #5a95cc;
+}
+
+#header:hover ~ .outer {
+  width: 0px;
+  height: 0px;
+}
+
+#header:hover ~ .inner {
+  width: 10px;
+  height: 10px;
+  background-color: #d4eaff;
+}
