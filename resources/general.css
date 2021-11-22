@@ -93,3 +93,135 @@ body {
   height: 10px;
   background-color: #d4eaff;
 }
+
+#socials:hover ~ .outer {
+  width: 0px;
+  height: 0px;
+}
+
+#socials:hover ~ .inner {
+  width: 10px;
+  height: 10px;
+  background-color: #d4eaff;
+}
+
+#email:hover ~ .outer {
+  width: 0px;
+  height: 0px;
+}
+
+#email:hover ~ .inner {
+  width: 10px;
+  height: 10px;
+  background-color: #d4eaff;
+}
+
+/* ////////////////
+/////STICKY ELEMENTS/////
+//////////////// */
+
+/* Page indicator */
+
+#page-indicator {
+  position: fixed;
+  gap: 2.4rem;
+  bottom: 0;
+  left: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.indicator {
+  height: 1rem;
+  width: 3rem;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(173, 215, 255, 0.616);
+}
+
+#stick {
+  width: 2px;
+  height: 35vh;
+  background-color: rgba(173, 215, 255, 0.616);
+}
+
+.active {
+  width: 6rem;
+  background-color: #d4eaff;
+}
+
+/* Page name */
+
+#current-name {
+  position: fixed;
+  gap: 2.4rem;
+  top: 20rem;
+  transform: rotate(-90deg);
+  left: 8rem;
+  font-weight: 600;
+  display: flex;
+  font-size: 2.4rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* E-mail */
+
+#email {
+  position: fixed;
+  bottom: 15rem;
+  transform: rotate(90deg);
+  right: -4rem;
+  font-weight: 500;
+  display: flex;
+  font-size: 2.4rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#email a {
+  text-decoration: none;
+  color: rgba(173, 215, 255, 0.616);
+}
+
+#email a:hover {
+  color: #d4eaff;
+}
+
+/* Socials */
+
+#socials {
+  position: fixed;
+  gap: 2.4rem;
+  top: 19rem;
+  right: 9.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.socials-icon {
+  height: 2rem;
+  width: 2rem;
+  color: rgba(173, 215, 255, 0.616);
+}
+
+#socials a:nth-child(1) .socials-icon:hover {
+  color: #e1306c;
+}
+
+#socials a:nth-child(2) .socials-icon:hover {
+  color: #25d366;
+}
+
+#socials a:nth-child(3) .socials-icon:hover {
+  color: #6e5494;
+}
+
+#socials a:nth-child(4) .socials-icon:hover {
+  color: #0e76a8;
+}

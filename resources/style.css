@@ -118,7 +118,7 @@
   position: absolute;
   top: 0;
   width: 90%;
-  height: 100%;
+  height: 93%;
   transition: all 0.3s ease-in-out;
   background-color: rgba(140, 199, 255, 0.329);
 }
@@ -259,4 +259,43 @@
   box-shadow: -21px 28px 0px -1px rgba(0, 0, 0, 0.14);
   -webkit-box-shadow: -21px 28px 0px -1px rgba(0, 0, 0, 0.14);
   -moz-box-shadow: -21px 28px 0px -1px rgba(0, 0, 0, 0.14);
+}
+
+/* ////////////////
+/////COLLAB SECTION/////
+//////////////// */
+
+#collab {
+  width: 80%;
+  align-self: center;
+  justify-self: center;
+  padding: 14.8rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#collab-cta {
+  padding: 1.6rem 4.8rem;
+}
+
+#collab .section-heading {
+  justify-content: center;
+}
+
+#collab .heading-secondary {
+  font-size: 5.2rem;
+}
+
+.collab-text {
+  align-self: center;
+  justify-self: center;
+  font-size: 1.8rem;
+  width: 50rem;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.collab-text p {
+  color: rgba(173, 215, 255, 0.616);
+  margin-bottom: 4.8rem;
 }
