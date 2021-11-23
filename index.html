@@ -12,7 +12,9 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script defer src="./resources/script.js"></script>
     <link rel="stylesheet" href="./resources/style.css" />
+    <link rel="stylesheet" href="./resources/querries.css" />
     <link rel="stylesheet" href="./resources/general.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,12 +29,19 @@
       ///////////////// [[HEADER]] /////////////////
     ////////////////////////////////// -->
     <header id="header">
-      <h1 style="color: #70baff">LOGO</h1>
+      <a href="#"
+        ><img
+          src="./resources/logo/base logo/logo-coloured.png"
+          alt="website logo"
+          class="web-logo"
+      /></a>
       <ul class="nav-bar">
         <li><a href="#about" class="nav-item">About</a></li>
         <li><a href="#work" class="nav-item">Work</a></li>
         <li><a href="#collab" class="nav-item">Contact</a></li>
-        <li><a href="#" class="nav-item cta-btn">Resume</a></li>
+        <li>
+          <a href="#" class="nav-item cta-btn">Resume</a>
+        </li>
       </ul>
     </header>
     <main id="main">
@@ -90,6 +99,7 @@
                 <ion-icon name="logo-javascript"></ion-icon>Javascript (ES6+)
               </li>
               <li><ion-icon name="logo-github"></ion-icon>Git</li>
+              <li><ion-icon name="logo-bitcoin"></ion-icon>Bootstrap</li>
             </ul>
           </div>
           <div class="abt-img">
@@ -107,7 +117,7 @@
           <h2 class="heading-secondary">A showcase of some of my works</h2>
         </div>
         <div class="work-pane">
-          <div class="work-text">
+          <div class="work-text work-text-1">
             <p>
               Food Place is one if my self projects. It is a website design for
               an imaginary food subscription service startup that is intended to
@@ -135,7 +145,7 @@
               ></a>
             </div>
           </div>
-          <div class="work-img">
+          <div class="work-img work-img-1">
             <img
               class="work-el right"
               src="./resources/img/1.png"
@@ -143,7 +153,7 @@
             />
             <div class="filter-work right"></div>
           </div>
-          <div class="work-img">
+          <div class="work-img work-img-2">
             <img
               class="work-el left"
               src="./resources/img/2.png"
@@ -151,7 +161,7 @@
             />
             <div class="filter-work left"></div>
           </div>
-          <div class="work-text">
+          <div class="work-text work-text-2">
             <p>
               Shuttle is a project of mine that included a group of 3 people
               working on it we synced our work in order to get this project
@@ -179,7 +189,7 @@
               ></a>
             </div>
           </div>
-          <div class="work-text">
+          <div class="work-text work-text-3">
             <p>
               Weather is a self project by me it uses open weather API to show
               the forecast world wide with things like lowest/highest
@@ -207,7 +217,7 @@
               ></a>
             </div>
           </div>
-          <div class="work-img">
+          <div class="work-img work-img-3">
             <img
               class="work-el right"
               src="./resources/img/3.png"
@@ -218,7 +228,7 @@
         </div>
       </section>
       <!-- //////////////////////////////////
-      ///////////////// [[COLLAB ELEMENTS]] /////////////////
+      ///////////////// [[COLLAB SECTION]] /////////////////
     ////////////////////////////////// -->
       <section id="collab">
         <div class="section-heading">
@@ -244,7 +254,7 @@
       </section>
     </main>
     <!-- //////////////////////////////////
-      ///////////////// [[COLLAB ELEMENTS]] /////////////////
+      ///////////////// [[FOOTER SECTION]] /////////////////
     ////////////////////////////////// -->
     <footer id="footer">
       <p>Designed and developed by Animesh Kumar</p>
@@ -296,6 +306,5 @@
     ////////////////////////////////// -->
     <div class="cursor outer"></div>
     <div class="cursor inner"></div>
-    <script src="./resources/script.js"></script>
   </body>
 </html>

@@ -43,7 +43,7 @@ const sectionObserver = new IntersectionObserver(function (
 ) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      console.log(entry);
+      // console.log(entry);
       let cls = entry.target.id;
       document.querySelector(`.${cls}`).classList.add("active");
       nameEl.innerText = cls;
@@ -63,31 +63,51 @@ sectionObserver.observe(collabEl);
 
 /////////// SMOOTH SCROLLING FUNCTIONALITY FOR SAFARI ///////////
 
-const allLinks = document.querySelectorAll("a:link");
-allLinks.forEach(function (link) {
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
-    const href = link.getAttribute("href");
+// const allLinks = document.querySelectorAll("a:link");
+// allLinks.forEach(function (link) {
+//   link.addEventListener("click", function (e) {
+//     e.preventDefault();
+//     const href = link.getAttribute("href");
 
-    //Scroll back to top
-    if (href === "#") {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    }
+//     //Scroll back to top
+//     if (href === "#") {
+//       window.scrollTo({
+//         top: 0,
+//         behavior: "smooth",
+//       });
+//     }
 
-    //Scroll to other links
-    if (href !== "#" && href.startsWith("#")) {
-      const sectionEl = document.querySelector(href);
-      sectionEl.scrollIntoView({
-        behavior: "smooth",
-      });
-    }
+//     //Scroll to other links
+//     if (href !== "#" && href.startsWith("#")) {
+//       const sectionEl = document.querySelector(href);
+//       sectionEl.scrollIntoView({
+//         behavior: "smooth",
+//       });
+//     }
 
-    //Close mobile navigation
-    if (link.classList.contains("main-nav-link")) {
-      headerEl.classList.toggle("nav-open");
+//     //Close mobile navigation
+//     if (link.classList.contains("main-nav-link")) {
+//       headerEl.classList.toggle("nav-open");
+//     }
+//   });
+// });
+
+/////////// STICKY NAVIGATION ///////////
+
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("floating");
     }
-  });
-});
+    if (ent.isIntersecting === true) {
+      document.body.classList.remove("floating");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-60px",
+  }
+);
+obs.observe(heroEl);

@@ -32,9 +32,12 @@
 
     url: https://fonts.google.com/specimen/Georama?query=georama
     
-    Code intigration: 
+    Code intigration: <link
+      href="https://fonts.googleapis.com/css2?family=Georama:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-    Boldness:
+    Boldness: 400 500 600 700 800
 
     Line heights: 1.6(paragraphs)
                     1.2(medium)

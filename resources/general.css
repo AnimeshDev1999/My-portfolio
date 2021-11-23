@@ -13,6 +13,7 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -54,6 +55,10 @@ body {
   font-size: 3rem;
   font-weight: 600;
   letter-spacing: 1px;
+}
+
+.web-logo {
+  width: 6.3rem;
 }
 
 /* ////////////////
@@ -228,4 +233,25 @@ body {
 
 #socials a:nth-child(4) .socials-icon:hover {
   color: #0e76a8;
+}
+
+/* ////////////////
+/////STICKY PAGE HEADER/////
+//////////////// */
+
+.floating #header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 7.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 100;
+  padding: 1.2rem 3.2rem;
+  background-color: rgba(47, 48, 50, 0.829);
+}
+
+.floating #hero {
+  margin-top: 7.5rem;
 }

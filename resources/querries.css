@@ -1,0 +1,203 @@
+/* ////////////////
+/////MEDIA QUERRIES/////
+//////////////// */
+
+@media (max-width: 93em) {
+  .filter {
+    height: 85%;
+  }
+}
+
+@media (max-width: 90em) {
+  .filter {
+    height: 78%;
+  }
+}
+
+@media (max-width: 86em) {
+  .filter {
+    height: 73%;
+  }
+}
+
+@media (max-width: 82em) {
+  .filter {
+    height: 68%;
+  }
+  #work {
+    padding: 9.6rem 2.4rem;
+  }
+}
+
+@media (max-width: 80em) {
+  .filter {
+    height: 60%;
+  }
+  .work-pane {
+    column-gap: 0;
+  }
+}
+
+@media (max-width: 74em) {
+  .filter {
+    height: 51%;
+  }
+  .work-pane {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .work-img-1 {
+    grid-row: 1;
+  }
+  .work-txt-1 {
+    grid-row: 2;
+  }
+  .work-img-2 {
+    grid-row: 3;
+  }
+  .work-txt-2 {
+    grid-row: 4;
+  }
+  .work-img-3 {
+    grid-row: 5;
+  }
+  .work-txt-3 {
+    grid-row: 6;
+  }
+  .work-el {
+    width: 70%;
+  }
+  .work-pane {
+    row-gap: 0;
+  }
+  .filter-work {
+    width: 68%;
+    height: 90%;
+    transform: translateY(-1rem);
+  }
+  .work-text {
+    width: 70%;
+  }
+  .my-img {
+    width: 100%;
+  }
+  .filter {
+    width: 100%;
+    height: 57%;
+  }
+}
+
+@media (max-width: 70em) {
+  .filter {
+    height: 50%;
+  }
+}
+
+@media (max-width: 67em) {
+  .filter {
+    display: none;
+  }
+  .my-img {
+    display: none;
+  }
+  .abt-pane {
+    grid-template-columns: 1fr;
+  }
+  #about {
+    width: 80%;
+    padding: 9.6rem;
+  }
+  #page-indicator,
+  #current-name,
+  #socials,
+  #email {
+    opacity: 0;
+    pointer-events: none;
+  }
+  #hero,
+  #work {
+    padding: 4.8rem;
+  }
+}
+
+@media (max-width: 62em) {
+  #collab {
+    width: 100%;
+    padding: 4.8rem 2.4rem;
+  }
+  #footer {
+    padding: 3.6rem 2.4rem;
+  }
+  .collab-text {
+    width: 20rem;
+  }
+  #hero p:nth-child(4) {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 60em) {
+  .filter-work {
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3rem);
+  }
+  .work-text {
+    width: 100%;
+    padding: 0;
+  }
+  .work-el {
+    width: 100%;
+  }
+  .work-pane {
+    column-gap: 0rem;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 0rem;
+  }
+  .tags {
+    display: none;
+  }
+  .work-img {
+    display: none;
+  }
+  .work-text {
+    width: 80vw;
+  }
+  #hero,
+  #about,
+  #work,
+  #collab {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 50em) {
+  html {
+    font-size: 8px;
+  }
+  #about {
+    width: 80%;
+    padding: 9.6rem 2.4rem;
+  }
+  #hero,
+  #work {
+    padding: 9.6rem 1.8rem;
+  }
+  h1 {
+    font-size: 4.8rem !important;
+  }
+  p {
+    font-size: 1.4rem !important;
+  }
+  .bac-text {
+    font-size: 8rem !important;
+  }
+  .heading-secondary {
+    font-size: 2.4rem;
+  }
+  #collab .heading-secondary {
+    font-size: 3.6rem;
+  }
+}
