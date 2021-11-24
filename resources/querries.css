@@ -74,7 +74,7 @@
     padding: 0 9.6rem;
   }
   .work-text {
-    align-self: start;
+    align-self: center;
     padding: 0;
     margin-top: 2.4rem;
   }
@@ -158,40 +158,43 @@
 
 @media (max-width: 45em) {
   #hero {
-    padding: 6.4rem !important;
+    padding: 9.6rem 6.4rem !important;
   }
   #about {
-    padding: 6.4rem !important;
+    padding: 9.6rem 6.4rem !important;
   }
   #work {
-    padding: 6.4rem !important;
+    padding: 9.6rem 6.4rem !important;
   }
   #collab {
-    padding: 6.4rem !important;
+    padding: 9.6rem 6.4rem !important;
   }
 }
 
 @media (max-width: 39em) {
   #hero {
-    padding: 2.4rem !important;
+    padding: 9.6rem 2.4rem !important;
   }
   #about {
-    padding: 2.4rem !important;
+    padding: 9.6rem 2.4rem !important;
   }
   #work {
-    padding: 2.4rem !important;
+    padding: 9.6rem 2.4rem !important;
   }
   #collab {
-    padding: 2.4rem !important;
+    padding: 9.6rem 2.4rem !important;
+  }
+  #footer {
+    padding: 3.6rem 2.4rem;
   }
 }
 
 @media (max-width: 39em) {
   #header {
-    padding: 1.2rem;
+    padding: 1.2rem !important;
   }
   .floating #header {
-    padding: 1.2rem;
+    padding: 1.2rem !important;
   }
   html {
     font-size: 7.5px !important;
@@ -217,7 +220,29 @@
   .abt-text {
     width: 40rem;
   }
-  #collab {
-    width: 10 !important;
+  .collab-text {
+    width: fit-content;
+    text-align: center;
+  }
+}
+
+@media (max-height: 41em) {
+  #socials {
+    top: 15rem !important;
+  }
+}
+
+@media (max-height: 39em) {
+  #socials {
+    top: 10rem !important;
+  }
+  #current-name {
+    top: 13rem !important;
+  }
+}
+
+@media (max-height: 35em) {
+  #socials {
+    gap: 1.6rem !important;
   }
 }
