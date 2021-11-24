@@ -191,12 +191,26 @@ body {
   flex-direction: column;
 }
 
+#collab-email {
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+
 #email a {
   text-decoration: none;
   color: rgba(173, 215, 255, 0.616);
 }
 
 #email a:hover {
+  color: #d4eaff;
+}
+
+#collab-email a {
+  text-decoration: none;
+  color: rgba(173, 215, 255, 0.616);
+}
+
+#collab-email a:hover {
   color: #d4eaff;
 }
 
@@ -211,6 +225,14 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+#collab-socials {
+  gap: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4.8rem;
 }
 
 .socials-icon {
@@ -235,6 +257,21 @@ body {
   color: #0e76a8;
 }
 
+#collab-socials a:nth-child(1) .socials-icon:hover {
+  color: #e1306c;
+}
+
+#collab-socials a:nth-child(2) .socials-icon:hover {
+  color: #25d366;
+}
+
+#collab-socials a:nth-child(3) .socials-icon:hover {
+  color: #6e5494;
+}
+
+#collab-socials a:nth-child(4) .socials-icon:hover {
+  color: #0e76a8;
+}
 /* ////////////////
 /////STICKY PAGE HEADER/////
 //////////////// */

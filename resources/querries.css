@@ -2,61 +2,98 @@
 /////MEDIA QUERRIES/////
 //////////////// */
 
-@media (max-width: 93em) {
-  .filter {
-    height: 85%;
+@media (max-width: 91em) {
+  #work {
+    padding: 9.6rem 21.2rem;
   }
 }
 
-@media (max-width: 90em) {
-  .filter {
-    height: 78%;
+@media (max-width: 87em) {
+  #work {
+    padding: 9.6rem 19.6rem;
   }
 }
 
-@media (max-width: 86em) {
-  .filter {
-    height: 73%;
+@media (max-width: 83em) {
+  #work {
+    padding: 9.6rem 14.8rem;
   }
 }
 
-@media (max-width: 82em) {
-  .filter {
-    height: 68%;
+@media (max-width: 78em) {
+  #hero {
+    padding: 9.6rem 19.6rem;
+  }
+  #about {
+    padding: 9.6rem 23.2rem;
   }
   #work {
-    padding: 9.6rem 2.4rem;
+    padding: 9.6rem 11.2rem;
+  }
+  #collab {
+    padding: 9.6rem 24.8rem;
+  }
+  #page-indicator {
+    left: 3rem !important;
+  }
+  #socials {
+    right: 5.5rem !important;
+  }
+  #email {
+    right: -7.5rem !important;
+  }
+  #current-name {
+    left: 1rem !important;
   }
 }
 
-@media (max-width: 80em) {
-  .filter {
-    height: 60%;
+@media (max-width: 73em) {
+  html {
+    font-size: 9px !important;
+  }
+  #work {
+    padding: 9.6rem 11.2rem;
+  }
+}
+
+@media (max-width: 66em) {
+  html {
+    font-size: 8.5px !important;
+  }
+}
+
+@media (max-width: 62em) {
+  #work {
+    padding: 9.6rem 21.2rem;
   }
   .work-pane {
     column-gap: 0;
-  }
-}
-
-@media (max-width: 74em) {
-  .filter {
-    height: 51%;
-  }
-  .work-pane {
+    row-gap: 2.4rem;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
+    padding: 0 9.6rem;
+  }
+  .work-text {
+    align-self: start;
+    padding: 0;
+    margin-top: 2.4rem;
+  }
+  .work-img {
+    padding: 0;
   }
   .work-img-1 {
     grid-row: 1;
   }
   .work-txt-1 {
     grid-row: 2;
+    margin-bottom: 2.4rem !important;
   }
   .work-img-2 {
     grid-row: 3;
   }
   .work-txt-2 {
     grid-row: 4;
+    margin-bottom: 2.4rem !important;
   }
   .work-img-3 {
     grid-row: 5;
@@ -64,140 +101,123 @@
   .work-txt-3 {
     grid-row: 6;
   }
-  .work-el {
-    width: 70%;
-  }
-  .work-pane {
-    row-gap: 0;
-  }
-  .filter-work {
-    width: 68%;
-    height: 90%;
-    transform: translateY(-1rem);
-  }
-  .work-text {
-    width: 70%;
-  }
-  .my-img {
-    width: 100%;
-  }
-  .filter {
-    width: 100%;
-    height: 57%;
-  }
 }
 
-@media (max-width: 70em) {
-  .filter {
-    height: 50%;
-  }
-}
-
-@media (max-width: 67em) {
-  .filter {
-    display: none;
-  }
-  .my-img {
-    display: none;
-  }
-  .abt-pane {
-    grid-template-columns: 1fr;
-  }
-  #about {
-    width: 80%;
-    padding: 9.6rem;
-  }
-  #page-indicator,
-  #current-name,
-  #socials,
-  #email {
-    opacity: 0;
-    pointer-events: none;
-  }
-  #hero,
-  #work {
-    padding: 4.8rem;
-  }
-}
-
-@media (max-width: 62em) {
-  #collab {
-    width: 100%;
-    padding: 4.8rem 2.4rem;
-  }
-  #footer {
-    padding: 3.6rem 2.4rem;
-  }
-  .collab-text {
-    width: 20rem;
-  }
-  #hero p:nth-child(4) {
-    width: fit-content;
-  }
-}
-
-@media (max-width: 60em) {
-  .filter-work {
-    width: 100%;
-    height: 100%;
-    transform: translateY(-3rem);
-  }
-  .work-text {
-    width: 100%;
-    padding: 0;
-  }
-  .work-el {
-    width: 100%;
-  }
-  .work-pane {
-    column-gap: 0rem;
-    grid-template-rows: repeat(3, 1fr);
-    row-gap: 0rem;
-  }
-  .tags {
-    display: none;
-  }
+@media (max-width: 59em) {
   .work-img {
     display: none;
   }
-  .work-text {
-    width: 80vw;
+  .work-pane {
+    grid-template-rows: repeat(3, 1fr);
   }
-  #hero,
-  #about,
-  #work,
-  #collab {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+  .abt-pane {
+    display: grid;
+    column-gap: 4.8rem;
+    grid-template-columns: 1fr;
+  }
+  .my-img {
+    display: none;
+  }
+  #hero {
+    padding: 9.6rem 13.2rem;
   }
 }
 
-@media (max-width: 50em) {
-  html {
-    font-size: 8px;
+@media (max-width: 53em) {
+  #about {
+    padding: 9.6rem 13.2rem;
+  }
+  .abt-text {
+    width: 60rem;
+    align-self: center;
+    justify-self: center;
+  }
+  #work {
+    padding: 9.6rem;
+  }
+  .work-pane {
+    padding: auto 0;
+    width: 80vw;
+  }
+  #collab {
+    padding: 9.6rem;
+  }
+  #page-indicator {
+    display: none !important;
+  }
+  #socials {
+    display: none !important;
+  }
+  #email {
+    display: none !important;
+  }
+  #current-name {
+    display: none !important;
+  }
+}
+
+@media (max-width: 45em) {
+  #hero {
+    padding: 6.4rem !important;
   }
   #about {
-    width: 80%;
-    padding: 9.6rem 2.4rem;
+    padding: 6.4rem !important;
   }
-  #hero,
   #work {
-    padding: 9.6rem 1.8rem;
+    padding: 6.4rem !important;
   }
-  h1 {
-    font-size: 4.8rem !important;
+  #collab {
+    padding: 6.4rem !important;
   }
-  p {
-    font-size: 1.4rem !important;
+}
+
+@media (max-width: 39em) {
+  #hero {
+    padding: 2.4rem !important;
   }
-  .bac-text {
-    font-size: 8rem !important;
+  #about {
+    padding: 2.4rem !important;
   }
-  .heading-secondary {
-    font-size: 2.4rem;
+  #work {
+    padding: 2.4rem !important;
   }
-  #collab .heading-secondary {
-    font-size: 3.6rem;
+  #collab {
+    padding: 2.4rem !important;
+  }
+}
+
+@media (max-width: 39em) {
+  #header {
+    padding: 1.2rem;
+  }
+  .floating #header {
+    padding: 1.2rem;
+  }
+  html {
+    font-size: 7.5px !important;
+  }
+  #hero {
+    width: auto;
+  }
+  #hero p:nth-child(4) {
+    width: auto;
+  }
+  .abt-text {
+    width: auto;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 29em) {
+  .work-pane {
+    padding: 0;
+    width: 35rem;
+  }
+  .abt-text {
+    width: 40rem;
+  }
+  #collab {
+    width: 10 !important;
   }
 }
