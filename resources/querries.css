@@ -75,6 +75,7 @@
   }
   .work-text {
     align-self: center;
+    justify-self: center;
     padding: 0;
     margin-top: 2.4rem;
   }
@@ -215,7 +216,9 @@
 @media (max-width: 29em) {
   .work-pane {
     padding: 0;
-    width: 35rem;
+    align-self: center;
+    justify-self: center;
+    width: fit-content;
   }
   .abt-text {
     width: 40rem;
